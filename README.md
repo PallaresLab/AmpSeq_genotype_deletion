@@ -11,7 +11,7 @@ The amplicon should be designed around the deletion breakpoint.
 ### Input
 
 - Paired-end amplicon reads in FASTQ
-- Reference of focal region in FASTA
+- {locus}.fa: Reference of focal region in FASTA
 - A space delimited table 
     - column 1: sample
     - column 2: locus
@@ -52,7 +52,8 @@ Other dependencies should be resolved by `conda` while running `snakemake`
 
 ### Prepare reference file in FASTA
 
-You can use entire chromosome or only focal region.
+
+Obtain the reference sequence in FASTA e.g. from NCBI.
 
 
 ### Prepare BED files
@@ -75,7 +76,7 @@ chr_2	0	15
 You need to prepare two BED files, one specifying the delesion, and another specifying flanking sequences of the delesion.
 The sequence name (1st column) should match the sequence name that appears in the reference FASTA, and the coordinate should be based on this sequence.
 For example, if the deletion is chr_1:1000101-1000200, but the reference sequence starts from chr_1:1000001, then the 2nd and 3rd columns should be 100 and 200.
-Also, if you use gene sequence from NCBI, the orientation is opposite when the locus is on the complementary side of the reference genome.
+Also note that if you use gene sequence from NCBI, the orientation is opposite when the locus is on the complementary side of the reference genome.
 
 
 The BED files have to be named in the following format:
