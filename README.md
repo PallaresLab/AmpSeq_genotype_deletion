@@ -26,7 +26,7 @@ The amplicon should be designed around the deletion breakpoint.
 
 - `trimmed/`: Directory containing trimmed FASTQ files
 - `bam/{sample}/`: Directory containing read mapping.
-- `genotype/{locus}/{allele}/{sample}_{locus}_{allele}_genotype.txt`: A text file with six columns (sample, locus, allele, genotype, depth_del, depth_flank)
+- `genotype/genotype.txt`: A text file with six columns (sample, locus, allele, genotype, depth_del, depth_flank)
 
 
 ### Workflow
@@ -80,8 +80,8 @@ Also, if you use gene sequence from NCBI, the orientation is opposite when the l
 
 The BED files have to be named in the following format:
 
-- {sample}_{locus}_{allele}_del.bed
-- {sample}_{locus}_{allele}_flank.bed
+- `{sample}_{locus}_{allele}_del.bed`
+- `{sample}_{locus}_{allele}_flank.bed`
 
 ### Prepare info table
 
