@@ -1,0 +1,13 @@
+prefix=/fml/ag-pallares/jishigohoka/software/AmpSeq_genotype_deletion/envs/3ff0d7f98b6316f58a098c452e675e9c_
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+sharedlibdir=${libdir}
+includedir=${prefix}/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

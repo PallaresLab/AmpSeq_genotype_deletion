@@ -1,0 +1,11 @@
+prefix=/fml/ag-pallares/jishigohoka/software/AmpSeq_genotype_deletion/envs/3ff0d7f98b6316f58a098c452e675e9c_
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: kadm-server
+Description: Kerberos administration server library
+Version: 1.17.2
+Requires.private: kdb mit-krb5-gssapi
+Cflags: -I${includedir}
+Libs: -L${libdir} -lkadm5srv_mit

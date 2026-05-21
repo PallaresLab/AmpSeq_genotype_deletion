@@ -22,8 +22,8 @@ wildcard_constraints:
     allele = "[^/_]+"
 
 def get_paired_fastq(wildcards):
-        R1 = glob.glob(dir_fastq_raw + f"/{wildcards.sample}*_R1_001.fastq.gz")
-        R2 = glob.glob(dir_fastq_raw + f"/{wildcards.sample}*_R2_001.fastq.gz")
+        R1 = glob.glob(dir_fastq_raw + f"/{wildcards.sample}_R1_001.fastq.gz")
+        R2 = glob.glob(dir_fastq_raw + f"/{wildcards.sample}_R2_001.fastq.gz")
         if len(R1) != 1:
                 raise ValueError(f"R1 not found for {wildcards.sample}")
         if len(R2) != 1:

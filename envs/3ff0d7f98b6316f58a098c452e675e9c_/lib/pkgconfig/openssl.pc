@@ -1,0 +1,9 @@
+prefix=/fml/ag-pallares/jishigohoka/software/AmpSeq_genotype_deletion/envs/3ff0d7f98b6316f58a098c452e675e9c_
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: OpenSSL
+Description: Secure Sockets Layer and cryptography libraries and tools
+Version: 1.1.1w
+Requires: libssl libcrypto
